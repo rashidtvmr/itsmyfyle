@@ -8,11 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot --prod"
   },
   "engines": {
-    "node":"11.14.0",
-    "npm":"6.9.0"
+    "node": "11.14.0",
+    "npm": "6.9.0"
   },
   "private": true,
   "dependencies": {
@@ -37,10 +37,11 @@
     "@angular/cli": "~7.3.8",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "enhanced-resolve": "^4.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
