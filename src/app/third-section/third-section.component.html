@@ -1,0 +1,62 @@
+
+
+<div class="row justify-content-center text-center" id="comparing-prices">
+    <h2><b>Comparing prices today!</b></h2>
+</div>
+<div class="row p-1 justify-content-center text-center">
+<!-- <h2>Comparing prices today!</h2> -->
+        <p class="comparing-prices-next p-sm-auto">Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting.</a></p>
+</div>
+<div class="row mx-md-4 mx-4 py-2 justify-content-sm-center">
+    <div class="rectangle shadow-sm col-sm-6 col-md-3 col-lg-1 p-sm-3 text-center bg-light" [style.border]="twentyFiveClicked ? '3px solid #0099FF':' '" (click)="onTwentyfiveClicked($event)" >
+        <p>25 servings</p>
+    </div>
+    <div class="rectangle shadow-sm col-sm-6 col-md-3 col-lg-1 p-sm-3 text-center bg-light" [style.border]="fiftyClicked ? '3px solid #0099FF':' '"  (click)="onFiftyClicked()" >
+            <p>50 servings</p>
+    </div>
+    <div class="rectangle shadow-sm col-sm-6 col-md-3 col-lg-1 p-sm-3 text-center bg-light" [style.border]="hundredClicked ? '3px solid #0099FF':' '" (click)="onHundredClicked()" >
+            <p>100 servings</p> 
+    </div>
+    <div class="rectangle shadow-sm col-sm-6 col-md-3 col-lg-1 p-sm-3 text-center bg-light" [style.border]="twoHundredClicked ? '3px solid #0099FF':' '" (click)="onTwoHundredClicked()" >
+            <p>200 servings</p>
+    </div>
+    
+</div>
+<!-- Toggle -->
+<div class="row my-5 justify-content-center">
+    <div style="margin-right:15px">
+        <b style="font-size: 23px;">Annual</b>
+        <br>
+        50% off
+    </div>
+    <div class="my-3">
+            <input name="checkbox" type="checkbox" id="unchecked" (change)="isChecked($event)" [checked]='true' class="cbx hidden m-3"/>
+            <label for="unchecked" class="lbl"></label>
+    </div>
+    <div ><b style="margin-left:15px;font-size:23px">Monthly</b></div>
+</div>
+<!-- Carddssss -->
+        <div class="row card-container mb-5">
+            <div class="col-12 col-sm-12 col-md-8 offset-md-3">
+                <div class="row">
+                    <div class="mycard col-4 shadow-sm col-sm-4 col-md-3 border text-center my-4 p-4" id="cardone">
+                            <p><b>lollipop</b></p>
+                            <p><b class="total-cost">${{totalLollipop+" "}}</b><span><i class="per-month">{{perMonthOrYearStr}}</i></span></p>
+                            <p class="serving-info">For {{servingCount}} servings</p>
+                    </div>
+                    <div class="mycard col-4 shadow-sm col-sm-4 col-md-3 border text-center my-4 p-4" id="cardtwo">
+                            <p><b>Icecandy</b></p>
+                            <p><b class="total-cost">${{totalIcecandy+" "}}</b><span ><i class="per-month"> {{perMonthOrYearStr}}</i></span></p>
+                            <p class="serving-info"><span>For {{servingCount}} servings</span></p>
+                    </div>
+                    <div class="mycard-bada col-4 shadow-lg col-sm-4 col-md-3 border text-center px-4 py-5" id="cardthree">
+                            <p><b>Your savings with lollipop</b></p>
+                            <p><b class="total-cost">${{lollipopMinusIcecandy}}</b><span ><i class="per-month">{{" "}}{{perMonthOrYearStr}}</i></span></p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            </div>
+        
+<!-- Card End... -->

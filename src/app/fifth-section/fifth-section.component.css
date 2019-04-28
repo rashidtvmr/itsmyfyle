@@ -1,0 +1,19 @@
+*{
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+#loved-by-users{
+    color: #31373D;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+}
+#loved-by-users-next{
+    color: #8B8E91;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
